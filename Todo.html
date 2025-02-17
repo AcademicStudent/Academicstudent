@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #003152;
+      }
+
+      ul {
+        list-style-type: none;
+        font-family: fantasy;
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: beige;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      li a {
+        display: block;
+        color: #67839a;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #fbfcf8;
+      }
+
+      .active {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 50px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer img {
+        height: 400px;
+        display: block;
+        position: fixed;
+        top: 170px;
+        left: 950px;
+        border: 5px solid #f6f2d8;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .image-container img {
+        height: 400px;
+        display: block;
+        left: 70px;
+        position: fixed;
+        border: 5px solid #f6f2d8;
+      }
+      #textbox {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 310px;
+        background-color: beige;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .todo {
+        color: #cd5c5c;
+      }
+
+      .enjoy {
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="todo" href="Todo.html">ABOUT</a></li>
+      <li><a class="active" href="index.html"> AS </a></li>
+      <li><a class="about" href="About.html">TO-DO</a></li>
+    </ul>
+    <footer>
+      <img
+        src="https://i.pinimg.com/736x/e2/4b/13/e24b1360af40d0d5dc7207e0b25c3be0.jpg"
+      />
+    </footer>
+    <footer>
+      <img
+        src="https://i.pinimg.com/736x/e2/4b/13/e24b1360af40d0d5dc7207e0b25c3be0.jpg"
+      />
+    </footer>
+    <footer>
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/736x/49/93/d2/4993d26bfe7145d0f1ee25bc82304870.jpg"
+        />
+      </div>
+    </footer>
+    <div id="textbox">
+      <p>Academic Student</p>
+      <p>
+        This organiser website serves as a tool for all students. It contains
+        multiple functions such as a To-Do list as well as a calendar for school
+        tasks and assesments. To minimize procrastination, create a helathier
+        school environment and a less stressful life for student, this website
+        will aim to bring numerous benifits to all students. With a simplistic
+        navigation bar the website will help you inspect the different webpages
+        available. The "To-do" page will contain two lists, one for activities
+        and the other for chores. The home page "AS" will contain a calendar in
+        which you can organise your school tasks. Lastly, the "About" page
+        contains a breif description about the website.
+      </p>
+      <p class="enjoy">Enjoy!</p>
+    </div>
+  </body>
+</html>

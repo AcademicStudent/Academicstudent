@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <Style>
+    
+    body {margin:0;
+         background-color: #003152;
+         }
+
+    ul {
+      list-style-type: none;
+      font-family: fantasy;
+      font-size: 35px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: beige;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex; 
+      justify-content: center;
+       justify-content: space-between;
+    }
+
+
+    li a {
+      display: block;
+      color: #67839a ;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+
+    }
+
+    li a:hover{
+      background-color: #fbfcf8;}
+
+    .active {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;  
+        color: #cd5c5c;
+       }
+
+      .table-container  {
+        display: flex;
+      justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 120px);
+     }
+
+    table {
+      border-collapse: collapse;
+      width: 80%; 
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 0.8cm;
+
+    }
+
+    .Blue 
+    {
+      background-color: #67839a;
+      color: #003152;
+      text-shadow: 1px 1px 1px #f5f5dc;
+    
+
+    }
+
+    .White {
+      background-color: beige;
+       color: #67839a;
+      text-shadow: 1px 1px 1px #003152;
+    
+    }
+
+
+    #wed {
+      width: 20%;
+
+    }
+
+
+  .rectangle-shape {
+      background-color: #ddd; 
+      padding: 5px 10px;
+      border-radius: 5px; 
+      margin-bottom: 10px; 
+      width: 60%;;
+
+    
+    }
+
+    .rectangle {
+      background-color: beige; 
+      padding: 10px 20px; 
+      border-radius: 5px; 
+      width: 200px; 
+      margin: 20px auto; 
+      position: relative;
+       top: 150px;
+      transform: translateY(-50%);
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:0.5cm;
+      
+
+    }
+
+    .Schedule {
+      color: #003152;  
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+    }
+ 
+    .Downloading
+{
+      top: 300px;
+      
+    }
+
+    #inputid { 
+      background-color:beige ; 
+      color: #003152;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: fixed; 
+      bottom: 100px; 
+      right: 600px; }
+
+</Style>
+  </head>
+  <body>
+    <ul>
+      <li><a id="to-do" href="Todo.html">ABOUT</a></li>
+      <li><a class="active" href="index.html"> AS </a></li>
+      <li><a class="about" href="About.html">TO-DO</a></li>
+    </ul>
+    <div class="rectangle">
+      <span class="Schedule"> <strong>☆ SCHEDULE ☆</strong></span>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th class="Blue" id="mon">Monday</th>
+          <th class="White" id="tue">Tuesday</th>
+          <th class="Blue" id="wed">Wednesday</th>
+          <th class="White" id="thu">Thursday</th>
+          <th class="Blue" id="fri">Friday</th>
+        </tr>
+        <tr>
+          <td class="White">
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+  
+          </td>
+          <td class="Blue">
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+          </td>
+          <td class="White">
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+          </td>
+          <td class="Blue" id="three">
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+  
+          </td>
+          <td class="White">
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+            <select>
+              <option value="Option 1">Subject</option>
+              <option value="Option 2">English</option>
+              <option value="Option 3">Other Language</option>
+              <option value="Option 3">Music</option>
+              <option value="Option 3">Art</option>
+              <option value="Option 3">Math</option>
+              <option value="Option 3">Science</option>
+              <option value="Option 3">PHE</option>
+              <option value="Option 3">Design</option>
+              <option value="Option 3">ISO </option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+     </div>
+     <input id="inputid" type="button" value="Print this page" onClick="window.print()">
+
+      
+  </body>
+
+</html>

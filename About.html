@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #003152;
+      }
+
+      ul {
+        list-style-type: none;
+        font-family: fantasy;
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: beige;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      li a {
+        display: block;
+        color: #67839a;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #fbfcf8;
+      }
+
+      .active {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 50px;
+      }
+
+      .rectangle {
+        background-color: beige;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 200px;
+        margin: 20px;
+        position: fixed;
+        top: 150px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 0.5cm;
+        left: 200px;
+      }
+
+      .Schedule {
+        color: #003152;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .square {
+        background-color: beige;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 200px;
+        margin: 20px;
+        position: fixed;
+        top: 150px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 0.5cm;
+        right: 200px;
+      }
+
+      .Chores {
+        color: #003152;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      .vertical {
+        border-left: 6px solid beige;
+        height: 810px;
+        position: fixed;
+        left: 50%;
+        bottom: -230px;
+      }
+
+      #Subject {
+        bottom: -800px;
+      }
+
+      .chores-container {
+        position: fixed;
+        top: 260px;
+        right: 250px;
+        width: 250px;
+      }
+      .activity-container {
+        position: fixed;
+        top: 260px;
+        left: 130px;
+        width: 250px;
+      }
+
+      .table-container {
+        display: flex;
+        align-items: center;
+        min-height: calc(100vh - 120px);
+        margin-right: 1000px;
+      }
+
+      td,
+      th {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+        margin-right: 800px;
+        background-color: beige;
+        height: 50px;
+        width: 25px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer img {
+        height: 200px;
+        display: block;
+        position: fixed;
+        top: 370px;
+        left: 30px;
+        border: 5px solid #f6f2d8;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .image-container img {
+        height: 200px;
+        display: block;
+        left: 340px;
+        position: fixed;
+        border: 5px solid #f6f2d8;
+      }
+
+      .photo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .photo-container img {
+        height: 200px;
+        display: block;
+        left: 750px;
+        position: fixed;
+        border: 5px solid #f6f2d8;
+      }
+      .cleaning-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .cleaning-container img {
+        height: 200px;
+        display: block;
+        left: 1000px;
+        position: fixed;
+        border: 5px solid #f6f2d8;
+      }
+
+      .about {
+        color: #cd5c5c;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="todo" href="Todo.html">ABOUT</a></li>
+      <li><a class="active" href="index.html"> AS </a></li>
+      <li><a class="about" href="About.html">TO-DO</a></li>
+    </ul>
+
+    <div class="rectangle">
+      <span class="Schedule"> <strong>☆ ACTIVITIES ☆</strong></span>
+    </div>
+
+    <div class="square">
+      <span class="Chores"> <strong>☆ CHORES ☆</strong></span>
+    </div>
+
+    <div class="chores-container">
+      <table>
+        <tr>
+          <td>
+            <select>
+              <option value="Option 1">Activity</option>
+              <option value="Option 2">Swimming</option>
+              <option value="Option 3">Volleyball</option>
+              <option value="Option 4">Tennis</option>
+              <option value="Option 5">Basketball</option>
+              <option value="Option 6">Football</option>
+              <option value="Option 7">Badminton</option>
+              <option value="Option 8">Handball</option>
+              <option value="Option 9">Other sport</option>
+              <option value="Option 10">Piano</option>
+              <option value="Option 11">Singing</option>
+              <option value="Option 12">Guitar</option>
+              <option value="Option 13">Bass</option>
+              <option value="Option 14">Choir</option>
+              <option value="Option 15">Drums</option>
+              <option value="Option 16">Other music</option>
+              <option value="Option 17">Other activity</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="Option 1">Activity</option>
+              <option value="Option 2">Swimming</option>
+              <option value="Option 3">Volleyball</option>
+              <option value="Option 4">Tennis</option>
+              <option value="Option 5">Basketball</option>
+              <option value="Option 6">Football</option>
+              <option value="Option 7">Badminton</option>
+              <option value="Option 8">Handball</option>
+              <option value="Option 9">Other sport</option>
+              <option value="Option 10">Piano</option>
+              <option value="Option 11">Singing</option>
+              <option value="Option 12">Guitar</option>
+              <option value="Option 13">Bass</option>
+              <option value="Option 14">Choir</option>
+              <option value="Option 15">Drums</option>
+              <option value="Option 16">Other music</option>
+              <option value="Option 17">Other activity</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="Option 1">Activity</option>
+              <option value="Option 2">Swimming</option>
+              <option value="Option 3">Volleyball</option>
+              <option value="Option 4">Tennis</option>
+              <option value="Option 5">Basketball</option>
+              <option value="Option 6">Football</option>
+              <option value="Option 7">Badminton</option>
+              <option value="Option 8">Handball</option>
+              <option value="Option 9">Other sport</option>
+              <option value="Option 10">Piano</option>
+              <option value="Option 11">Singing</option>
+              <option value="Option 12">Guitar</option>
+              <option value="Option 13">Bass</option>
+              <option value="Option 14">Choir</option>
+              <option value="Option 15">Drums</option>
+              <option value="Option 16">Other music</option>
+              <option value="Option 17">Other activity</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="activity-container">
+      <table>
+        <tr>
+          <td>
+            <select>
+              <option value="Option 1">Chores</option>
+              <option value="Option 1">Dishes</option>
+              <option value="Option 2">Walk the dog</option>
+              <option value="Option 3">Make the bed</option>
+              <option value="Option 4">Laundry</option>
+              <option value="Option 5">Take out garbage</option>
+              <option value="Option 6">Clean room</option>
+              <option value="Option 7">Fold clothes</option>
+              <option value="Option 8">Water the plants</option>
+              <option value="Option 9">Vacuming</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="Option 1">Chores</option>
+              <option value="Option 1">Dishes</option>
+              <option value="Option 2">Walk the dog</option>
+              <option value="Option 3">Make the bed</option>
+              <option value="Option 4">Laundry</option>
+              <option value="Option 5">Take out garbage</option>
+              <option value="Option 6">Clean room</option>
+              <option value="Option 7">Fold clothes</option>
+              <option value="Option 8">Water the plants</option>
+              <option value="Option 9">Vacuming</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="Option 1">Chores</option>
+              <option value="Option 1">Dishes</option>
+              <option value="Option 2">Walk the dog</option>
+              <option value="Option 3">Make the bed</option>
+              <option value="Option 4">Laundry</option>
+              <option value="Option 5">Take out garbage</option>
+              <option value="Option 6">Clean room</option>
+              <option value="Option 7">Fold clothes</option>
+              <option value="Option 8">Water the plants</option>
+              <option value="Option 9">Vacuming</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="vertical"></div>
+
+    <footer>
+      <img
+        src="https://wallpapers.com/images/hd/top-view-of-desk-study-aesthetic-2lbtiexp45v9jo89.jpg"
+      />
+    </footer>
+    <footer>
+      <div class="image-container">
+        <img
+          src="https://cdn.artphotolimited.com/images/59888232b0ba742a2efde168/700x700/jairzinho-psg-marseille-1975.jpg"
+        />
+      </div>
+    </footer>
+    <footer>
+      <div class="photo-container">
+        <img
+          src="https://jungleculture.eco/cdn/shop/articles/how-to-clean-your-reusable-bottle_1600x.jpg?v=1633287552"
+        />
+      </div>
+    </footer>
+    <footer>
+      <div class="cleaning-container">
+        <img
+          src="https://images.unsplash.com/photo-1669822293673-d321743f7fe8?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
